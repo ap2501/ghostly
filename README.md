@@ -1,6 +1,7 @@
 
 # Ghostly
-
+Demo: https://youtu.be/-eb-3GLYTOE.
+-
 Ghostly is an anonymous messaging app where users can share unique links with friends to receive messages anonymously. Ghostly offers a modern, engaging platform for anonymous interactions.
 
 ## Features
