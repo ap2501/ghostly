@@ -10,7 +10,7 @@ const Home = () => {
   const messages = [
     "Just wanted to say you're awesome!",
     "Had a great time hanging out last weekend!",
-    "Your advice really helped me, thank you!",
+    "Your advice really helped me, thanks!",
     "I admire your work ethic, keep it up!",
   ];
 
