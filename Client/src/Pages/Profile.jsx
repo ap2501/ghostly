@@ -12,7 +12,7 @@ const Profile = () => {
   const fetchMessages = async () => {
     setIsRefreshing(true);
     try {
-      const response = await fetch("http://localhost:5000/api/messages", {
+      const response = await fetch("https://ghostly-backend-cyan.vercel.app/api/messages", {
         headers: {
           "Authorization": `Bearer ${token}`,
         },

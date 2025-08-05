@@ -17,7 +17,7 @@ const SignUp = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/users/register', 
+      const response = await fetch('https://ghostly-backend-cyan.vercel.app/api/users/register', 
         {
           method: "POST",
           headers: {

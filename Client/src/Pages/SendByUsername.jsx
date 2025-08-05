@@ -17,7 +17,7 @@ const SendByUsername = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post(`http://localhost:5000/api/messages/${username}`, { 
+      const response = await axios.post(`https://ghostly-backend-cyan.vercel.app/api/messages/${username}`, { 
         content: message 
       });
 

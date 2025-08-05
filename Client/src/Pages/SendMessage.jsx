@@ -17,7 +17,7 @@ const SendMessage = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch(`http://localhost:5000/api/messages/${username}`, {
+      const response = await fetch(`https://ghostly-backend-cyan.vercel.app/api/messages/${username}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
