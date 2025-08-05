@@ -9,7 +9,7 @@ import Profile from './Pages/Profile.jsx';
 import SendMessage from './Pages/SendMessage.jsx'; // Import the new component
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { AuthProvider } from './context/AuthContext.jsx';
+import { AuthProvider } from './Context/AuthContext.jsx';
 import PrivateRoute from './Components/PrivateRoute.jsx';
 import About from './Pages/About.jsx';
 import SendByUsername from './Pages/SendByUsername.jsx';

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, MessageSquare, Shield, Zap, Users, ChevronRight, Star } from "lucide-react";
 import Navbar from "../Components/Navbar.jsx";
-import AuthContext from "../context/AuthContext";
+import AuthContext from "../Context/AuthContext";
 
 const Home = () => {
   const { isAuthenticated, username } = useContext(AuthContext);

@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { Copy, MessageSquare, RefreshCw, Link2, Calendar, Clock } from "lucide-react";
-import AuthContext from "../context/AuthContext";
+import AuthContext from "../Context/AuthContext";
 import Navbar from "../Components/Navbar";
 
 const Profile = () => {
