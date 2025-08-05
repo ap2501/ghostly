@@ -1,42 +1,23 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState } from 'react';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [token, setToken] = useState(null);
-  const [username, setUsername] = useState(null);
+  const [username, setUsername] = useState(null); // Add username state
 
-  useEffect(() => {
-    // On app load, restore auth state from localStorage
-    const storedToken = localStorage.getItem('token');
-    const storedUsername = localStorage.getItem('username');
-
-    if (storedToken && storedUsername) {
-      setToken(storedToken);
-      setUsername(storedUsername);
-      setIsAuthenticated(true);
-    }
-  }, []);
-
+  // Update login function to handle username
   const login = (userToken, userName) => {
     setToken(userToken);
-    setUsername(userName);
+    setUsername(userName); // Set username
     setIsAuthenticated(true);
-
-    // Store in localStorage
-    localStorage.setItem('token', userToken);
-    localStorage.setItem('username', userName);
   };
 
   const logout = () => {
     setToken(null);
-    setUsername(null);
+    setUsername(null); // Clear username on logout
     setIsAuthenticated(false);
-
-    // Remove from localStorage
-    localStorage.removeItem('token');
-    localStorage.removeItem('username');
   };
 
   return (
