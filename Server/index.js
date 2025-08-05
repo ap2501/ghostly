@@ -34,6 +34,4 @@ connect(process.env.MONGO_URI, {
 .catch((error) => console.error('MongoDB connection error:', error));
 
 // Start the server
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+export default app;
